@@ -2,12 +2,13 @@
     $.fn.timeselector = function(  ) {
         this.each(function() {
             $(this).click(function() {
-                showTimeSelector();
+                showTimeSelector(this );
             });
         });
     };
 
-    function showTimeSelector() {
+    function showTimeSelector(el) {
         console.log("show time selector");
+        $('<div>hello</div>').appendTo(el);
     };
 }( jQuery ));
